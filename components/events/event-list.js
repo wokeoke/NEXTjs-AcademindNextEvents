@@ -4,7 +4,7 @@ function EventList({ items }) {
   return (
     <ul>
       {items.map((event) => (
-        <EventItem event={event} />
+        <EventItem key={event.id} event={event} />
       ))}
     </ul>
   );
